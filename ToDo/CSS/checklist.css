@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../images/bg_img.jpg");
+}
+.todo_section{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.heading{
+    margin-top: 20px;
+    font-size: 50px;
+}
+.heading h1{
+    text-align: center;
+    background: -webkit-linear-gradient(orange,rgb(0, 255, 221), rgb(207, 128, 204), yellow,pink);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.add-checklist{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    column-gap: 20px;
+}
+.add-checklist .item{
+    height: 50px;
+    width: 350px;
+    background-image: url("../images/mountain.jpg");
+    background-size: 100% 160%;
+    background-position: 0px -25px;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 15px;
+    font-size: 20px;
+    color: white;
+    padding: 0 15px;
+}
+.add-checklist .item:focus-visible{
+    outline: none;
+}
+.add-checklist .item::placeholder{
+    color: rgba(255, 255, 255, 0.57);
+}
+.add-checklist .add_btn{
+    font-weight: 1000;
+    width: 100px;
+    font-size: 20px;
+    border-radius: 25px;
+    color: white;
+    background: linear-gradient(to bottom right, green, blue, red, black, purple, brown, white, orange, violet,yellow);
+}
+.checklist-items{
+    margin-top: 50px;
+    display: flex;
+    font-size: 25px;
+    color: white;
+    padding-left: 100px;
+}
+form > h1{
+    padding-left: 50px;
+    margin-top: 30px;
+    font-size: 25px;
+    color: antiquewhite;
+    text-decoration: underline;
+}
+.checklist-items input[type="submit"]{
+    padding: 10px 25px;
+    border-radius: 25px;
+    border: none;
+}
